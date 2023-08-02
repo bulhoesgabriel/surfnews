@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Luckiest+Guy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+:root {
+    --cor1: #3FAEAB;
+    --cor2: #218C97;
+    --cor3: #1E7387;
+    --cor4: #196178;
+    --fonte-destaque: 'Kaushan Script', cursive;
+    --fonte-titulo: 'Oswald', sans-serif;
+    --fonte-padrao: Arial, sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.900), black);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    font-size: 4.5em;
+    color: rgba(0, 0, 0, 0.850);
+    text-shadow: 1px 1px 1px white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+header > p {
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-size: 1.5em;
+    color: lightgray;
+    text-shadow: 1px 1px 1px black;
+    padding-bottom: 30px;
+}
+
+nav {
+    background-color: var(--cor4);
+    text-align: center;
+    padding: 20px 20px;
+    margin-bottom: 1px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.500);
+}
+
+nav > a {
+    text-decoration: none;
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    font-size: 1.1em;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    padding: 3px 10px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    color: var(--cor4);
+    background-color: white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.500);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto; 
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    padding: 40px;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.500);
+}
+
+main h1 {
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    font-family: var(--fonte-titulo);
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 10px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+main h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor4);
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.500);
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+main img {
+    width: 100%;
+}
+
+main div.imagem {
+    margin: 40px 0px;
+}
+
+div.video {
+    margin-top: 20px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.700), black);
+    padding-bottom: 54.5%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main aside {
+    background-color: var(--cor3);
+    color: lightgray;
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 20px 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.400);
+}
+
+main h3 {
+    font-family: var(--fonte-titulo);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-indent: 30px;
+    margin-bottom: 15px;
+}
+
+main p {
+    text-indent: 30px;
+    text-align: justify;
+    line-height: 2em;
+}
+
+aside > p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+main strong {
+    font-weight: bold;
+    color: var(--cor4);
+}
+
+main ul {
+    margin-left: 30px;
+    list-style-type: '\1F30A\00A0';
+    list-style-position: inside;
+}
+
+li > a {
+    font-family: var(--fonte-titulo);
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    line-height: 2em;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+    padding: 3px 10px;
+}
+
+li > a:hover {
+    background-color:var(--cor3);
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.500);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.500);
+}
+
+footer {
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    font-style: italic;
+    color: var(--cor1);
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.400);
+    text-align: center;
+    padding: 2px 0px;
+    margin: 2px 0px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor1);
+    transition-duration: 0.5s;
+}
+
+footer a:hover {
+    color: white;
+}
